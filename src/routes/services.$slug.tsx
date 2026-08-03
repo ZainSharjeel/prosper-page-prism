@@ -49,12 +49,12 @@ function ServicePage() {
               className="h-72 w-full rounded-lg object-cover shadow-panel"
             />
             <div className="mt-8 space-y-4 text-base leading-relaxed text-muted-foreground">
-              {service.body.map((p) => (
+              {service.body.map((p: string) => (
                 <p key={p}>{p}</p>
               ))}
             </div>
             <ul className="mt-8 grid gap-3 sm:grid-cols-2">
-              {service.bullets.map((b) => (
+              {service.bullets.map((b: string) => (
                 <li key={b} className="flex items-start gap-3 rounded-md bg-surface p-4 shadow-card">
                   <Check className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
                   <span className="text-sm font-semibold text-navy">{b}</span>
